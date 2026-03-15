@@ -1,0 +1,15 @@
+{
+    "name": "user-manager-app",
+    "private": true,
+    "scripts": {
+        "install-all": "npm install && cd client && npm install  && npm run build",
+        "dev": "concurrently \"node server/server.js\" \"cd client && npm run dev\""
+    },
+    "dependencies": {
+        "concurrently": "^8.0.0",
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^5.0.1"
+    }
+}
